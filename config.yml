@@ -5,13 +5,12 @@ jobs:
       - uses: gacts/directory-listing@v1
         with:
           target: ./img
-          # target: .
-          # ignore: |
-          #   build/**
-          #   **/index.html
-          #   node_modules/**,**/*.log
-          # show-hidden: true
-          # overwrite: true
+          ignore: |
+            build/**
+            **/index.html
+            node_modules/**,**/*.log
+           show-hidden: true
+          overwrite: true
 
       - uses: peaceiris/actions-gh-pages@v4
         with:
