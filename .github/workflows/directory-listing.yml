@@ -1,12 +1,2 @@
-            - name: Recursive HTML Directory Listing
-  # You may pin to the exact commit or the version.
-  # uses: ElliNet13/html-dir-list@2b0c16fc8d0a5c8bfc3c632494188716d901e5ab
-  uses: ElliNet13/html-dir-list@v1
-  with:
-    # Starting directory (default is current directory)
-    dir: # optional, default is .
-    # Hide dot files (default is true)
-    hideDotFiles: # optional, default is true
-    # Show last modifed dates (default is false)
-    displayLastModified: # optional, default is false
-          
+- name: Directory Listing
+  uses: gacts/directory-listing@v1.0.3
